@@ -1,4 +1,4 @@
-const API_URL = "https://dictionaryapi.dev";
+const API_URL = "https://dictionaryapi.dev/api/v2/entries/en/";
 let favorites = JSON.parse(localStorage.getItem('wordlyFavorites')) || [];
 
 // Search form event
