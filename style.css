@@ -1,0 +1,21 @@
+:root { /* Light mode colors */
+    --bg: #f0f2f5; --card: white; --text: #333; --accent: #4c51bf;
+}
+body.dark { /* Dark mode colors */
+    --bg: #1a202c; --card: #2d3748; --text: #e2e8f0; --accent: #667eea;
+}
+body {
+    background: var(--bg); color: var(--text); font-family: Arial;
+    display: flex; justify-content: center; padding: 20px;
+}
+.container { width: 100%; max-width: 700px; }
+.card {
+    background: var(--card); padding: 20px; border-radius: 10px;
+    margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+input, button { padding: 10px; margin: 5px; border-radius: 5px; border: 1px solid #ccc; }
+button { background: var(--accent); color: white; cursor: pointer; border: none; }
+button:hover { opacity: 0.8; }
+.hidden { display: none; }
+.error { color: red; }
+.tag { background: var(--accent); color: white; padding: 3px 8px; border-radius: 15px; margin: 2px; display: inline-block; font-size: 0.85em; }
